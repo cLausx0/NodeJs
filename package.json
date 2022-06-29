@@ -1,9 +1,13 @@
 {
   "name": "firstapi",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/server.js",
   "scripts": {
-    "test": "jest"
+    "start": "nodemon src/server.js",
+    "lint": "eslint --fix src/** test/**",
+    "test": "jest --verbose=true",
+    "testing": "jest --watch --verbose=true"
   },
   "keywords": [],
   "author": "",
@@ -18,9 +22,5 @@
     "jest": "^28.1.1",
     "nodemon": "^1.3.3",
     "supertest": "^6.2.3"
-  },
-  "directories": {
-    "test": "test"
-  },
-  "description": ""
+  }
 }

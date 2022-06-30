@@ -26,4 +26,11 @@ router.delete('/:instructorId', (req, res) => {
   res.status(200).json(instructor.deleteInstructor(req.params.instructorId));
 });
 
+router.put('/:instructorId', (req, res) => {
+  const id = req.params.instructorId;
+  const instructors = req.body;
+  const newInstructor = instructor.changeInstructor(id, instructors);
+  res.status(200).json(newInstructor);
+});
+
 module.exports = router;

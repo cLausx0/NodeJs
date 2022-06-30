@@ -109,7 +109,7 @@ test('Deve apagar outro instrutor', () => {
     expect(res.status).toBe(200);
     expect(res.body.registration).toBe('1643697');
     expect(res.body.name).toBe('Jailson Tenório do Nascimento');
-    expect(res.body.email).toBe('jailson.nascimento@pesqueira.ifpe.edu.br');
+    expect(res.body.email).toBe('jailson.tenorio@belojardim.ifpe.edu.br');
     expect(res.body.birth_date).toBe('16/10/1983');
   });
 });

@@ -31,6 +31,15 @@ function deleteInstructor(id) {
   return instructor;
 }
 
+function changeInstructor(id, instructor) {
+  const newInstructor = instructors[id] || {};
+  newInstructor.registration = instructor.registration;
+  newInstructor.name = instructor.name;
+  newInstructor.email = instructor.email;
+  newInstructor.birth_date = instructor.birth_date;
+  return newInstructor;
+}
+
 module.exports = {
-  addInstructor, getInstructor, getInstructors, deleteInstructor,
+  addInstructor, getInstructor, getInstructors, deleteInstructor, changeInstructor,
 };
